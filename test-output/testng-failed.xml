@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LearningDataDrivenframework]">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Bank manger login Test">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Bank manger login Test -->
+  <test name="Add Customer Test">
+    <classes>
+      <class name="testcases.AddCustomerTest"/>
+    </classes>
+  </test> <!-- Add Customer Test -->
+  <test name="Open Account Test">
+    <classes>
+      <class name="testcases.OpenAccountTest"/>
+    </classes>
+  </test> <!-- Open Account Test -->
+  <test name="Bank manger login Test(failed)">
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="loginAsBankManagerTest"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.OpenAccountTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- Bank manger login Test(failed) -->
+  <test name="Add Customer Test(failed)">
+    <classes>
+      <class name="testcases.AddCustomerTest">
+        <methods>
+          <include name="addCustomer"/>
+        </methods>
+      </class> <!-- testcases.AddCustomerTest -->
+      <class name="testcases.OpenAccountTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- Add Customer Test(failed) -->
+  <test name="Open Account Test(failed)">
+    <classes>
+      <class name="testcases.OpenAccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="OpenAccount"/>
+        </methods>
+      </class> <!-- testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- Open Account Test(failed) -->
+</suite> <!-- Failed suite [LearningDataDrivenframework] -->

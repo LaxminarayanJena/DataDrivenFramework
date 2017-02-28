@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LearningDataDrivenframework" duration-ms="2311" started-at="2016-12-12T08:10:06Z" finished-at="2016-12-12T08:10:08Z">
+    <groups>
+    </groups>
+    <test name="Bank manger login Test" duration-ms="280" started-at="2016-12-12T08:10:06Z" finished-at="2016-12-12T08:10:06Z">
+      <class name="testcases.LoginTest">
+        <test-method status="PASS" signature="loginAsBankManagerTest()[pri:0, instance:testcases.LoginTest@198b6731]" name="loginAsBankManagerTest" duration-ms="273" started-at="2016-12-12T13:40:06Z" finished-at="2016-12-12T13:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManagerTest -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Bank manger login Test -->
+    <test name="Add Customer Test" duration-ms="578" started-at="2016-12-12T08:10:06Z" finished-at="2016-12-12T08:10:07Z">
+      <class name="testcases.AddCustomerTest">
+        <test-method status="PASS" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@65e98b1c]" name="addCustomer" duration-ms="565" started-at="2016-12-12T13:40:06Z" data-provider="getData" finished-at="2016-12-12T13:40:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tester]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[87980.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+    <test name="Open Account Test" duration-ms="1431" started-at="2016-12-12T08:10:07Z" finished-at="2016-12-12T08:10:08Z">
+      <class name="testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@b2c9a9c]" name="setUp" is-config="true" duration-ms="4560" started-at="2016-12-12T13:40:01Z" finished-at="2016-12-12T13:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OpenAccount(java.lang.String, java.lang.String)[pri:0, instance:testcases.OpenAccountTest@b2c9a9c]" name="OpenAccount" duration-ms="1429" started-at="2016-12-12T13:40:07Z" data-provider="getData" finished-at="2016-12-12T13:40:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera tester]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dollar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.OpenAccountTest@b2c9a9c]" name="tearDown" is-config="true" duration-ms="548" started-at="2016-12-12T13:40:08Z" finished-at="2016-12-12T13:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.OpenAccountTest -->
+    </test> <!-- Open Account Test -->
+  </suite> <!-- LearningDataDrivenframework -->
+</testng-results>
